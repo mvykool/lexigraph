@@ -1,7 +1,9 @@
 # === Rust build files ===
 /target/
 **/*.rs.bk
-
+.env
+target/
+postgres_data/
 # === Dependency lock files ===
 /Cargo.lock
 
