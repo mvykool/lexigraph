@@ -9,7 +9,6 @@ use std::net::SocketAddr;
 async fn main() {
     let routes_hello: Router = Router::new().route("/hello", get(handler_hello));
 
-    // region --start server
     let addr: SocketAddr = SocketAddr::from(([127, 0, 0, 1], 8080));
     print!("->> LISTENING ON {addr}\n");
     axum::Server::bind(&addr)
